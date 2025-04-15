@@ -131,6 +131,7 @@ export default function Settings() {
     { id: 'profile', name: 'Profile', icon: UserIcon },
     { id: 'appearance', name: 'Appearance', icon: PaintBrushIcon },
     { id: 'api', name: 'API Keys', icon: KeyIcon },
+    { id: 'about', name: 'About', icon: UserIcon }, // Using UserIcon as placeholder for About
   ];
 
   return (
@@ -367,6 +368,27 @@ export default function Settings() {
                   </button>
                 </div>
               </div>
+            </div>
+          )}
+{activeTab === 'about' && (
+            <div>
+              <h2 className="text-xl font-semibold mb-4" style={{ color: 'var(--color-text)' }}>Pinnacle Flow Version</h2>
+              <p style={{ color: 'var(--color-text-secondary)', whiteSpace: 'pre-line', marginBottom: '1rem' }}>
+              Pinnacle Flow is a research team dedicated to developing the application of AI that will shape the future of VLSI Design.
+                Our mission is to create omni and smart models that are safe and responsible, while making AGI accessible to the global community through open-source initiatives.
+                We have developed a diverse portfolio of AGI models, including our flagship large language model series: Pinnacle Flow for general language tasks of VLSI Design, managing the users of a project who run blocks of the project.
+                Our AI-driven solutions are designed to optimize design workflows, enhance productivity, and ensure high-quality outcomes in complex VLSI projects.
+                We emphasize collaboration, transparency, and innovation to empower engineers and researchers in the semiconductor industry.
+                With continuous advancements, Pinnacle Flow aims to be the leading platform integrating AI with VLSI design automation.
+                Join us on this journey to revolutionize the future of chip design and development.
+                Pinnacle Flow Chat serves as an intuitive interface enabling users and developers to seamlessly interact with both our open-source and proprietary models, including Pinnacle Flow.
+                The platform offers comprehensive functionality for tracking users' work and their run status, document processing using RAG, tool utilization, and artifacts. We welcome you to explore Pinnacle Flow Chat and share your valuable feedback with us!
+
+
+              </p>
+              <p style={{ color: 'var(--color-text-secondary)' }}>
+                Feedback email: <a href="mailto:eswar@sierraedge.ai" style={{ color: 'var(--color-primary)' }}>eswar@sierraedge.ai</a>
+              </p>
             </div>
           )}
         </div>
